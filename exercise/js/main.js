@@ -16,7 +16,7 @@
  */
 
 function question1() {
-	// your answer here
+	$("p").css("color", "blue");
 }
 
 $("#button1").on('click', question1);
@@ -28,7 +28,7 @@ $("#button1").on('click', question1);
  */
 
 function question2(){
-	// your answer here
+		$("h2").text("Omar Almalky");
 }
 
 $("#button2").on('click', question2);
@@ -41,7 +41,7 @@ $("#button2").on('click', question2);
  */
 
 function question3(){
-	// your answer here
+	$(".falseFact").html("True Fact");
 }
 
 $("#button3").on('click', question3);
@@ -55,21 +55,31 @@ $("#button3").on('click', question3);
  * When button 4 is clicked, change the background color of the whole page to "pink"
  */
 
-// your answer here
+$('#button4').click(question4);
 
-/**
- * Question 5:
- * When button 5 is clicked, change the color of all h2's to "green"
- */
+ function question4(){
+$('body').css('backgroundColor','pink');
+ }
 
-// your answer here
+ //Question 5:
+ //When button 5 is clicked, change the color of all h2's to "green"
+ 
+	$("#button5").click(question5);
+
+  	function question5(){
+	$("h2").css("color",green");
+	}
+
 
 /**
  * Question 6:
  * When button 6 is clicked, change the html content of all "blockquotes" to be "<span>no quote</span>"
  */
+	$("#button6").click(question6);
+	function question6(){
+		$('blockquote').html('<span>no quotes</span>');
+	}
 
- // your answer here
 
 ///////////////////////////////////////////////////////////////////////////////////////
 // SECTION 3: This section is more difficult. Try your hand at the next 3 questions. //
